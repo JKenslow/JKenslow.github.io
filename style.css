@@ -1,0 +1,108 @@
+body {
+    background-color: #E0E0E0;
+    color: #000000;
+    font-size: 16px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+#navigation a {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+#navigation a:focus,
+#navigation a:hover {
+    background-color: #555;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.border {
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.page {
+    margin: 5%;
+}
+
+.content {
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex: 2;
+    padding-right: 10px;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.para {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h2,
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .right {
+        text-align: left;
+        padding-top: 10px;
+    }
+}
